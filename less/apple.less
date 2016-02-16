@@ -1,0 +1,246 @@
+.header{
+  width: 100%;
+  background:#000;
+  height: 44px;
+  text-align: center;
+  color: #fff;
+}
+a{
+  color: #fff;
+  text-decoration: none;
+}
+.header-con{
+  max-width:1024px;
+  margin: 0 auto;
+  height: 100%;
+  line-height: 44px;
+}
+.slide{
+  position: relative;
+  z-index:2;
+}
+.slide-list{
+  width: 300%;
+  display: none;
+}
+.slide a{
+  display: block;
+  width: 100%;
+  background: #000;
+}
+.son{
+  width: 80%;
+  margin: 0 auto  ;
+}
+.banner{
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  position: relative;
+}
+.btn{
+  width: 90px;
+  height: 10px;
+  position: absolute;
+  left: 0;right: 0;margin: auto;
+  bottom: 5px;
+}
+.btn li{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background: #888;
+  float: left;
+  cursor: pointer;
+}
+.btn li:nth-child(1){
+  background: none;
+  border: 1px solid green;
+}
+.list-all{
+  width: 500%;
+}
+.list{
+  height:200px;
+  width:20%;
+  display: block;
+  color: #000;
+  float: left;
+  background-size: auto 200px;
+}
+.list:nth-child(1){
+  background: url(../images/small.png) no-repeat center;
+}
+.list:nth-child(2){
+  background: url(../images/home_hero_cny_small.jpg) no-repeat center;
+}
+.list:nth-child(3){
+  background: url(../images/H2.jpg) no-repeat center;
+}
+.list:nth-child(4){
+  background: url(../images/hero_music_movies_books_xsmall.png) no-repeat center;
+}
+.list:nth-child(5){
+  background: url(../images/small.png) no-repeat center;
+}
+.text{
+  margin-top: 20px;
+  font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
+}
+.text h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+.text h2{
+  color: #333;
+  font-size:20px ;
+  font-weight: normal;
+}
+.text span{
+  font-size: 18px;
+  color: aqua;
+}
+@media screen and (min-width:730px){
+  .list{
+    height: 600px;
+    background-size: auto 600px;
+  }
+  .list:nth-child(1){
+    background: url("../images/large.png") no-repeat center;
+  }
+  .list:nth-child(2){
+    background: url("../images/home_hero_cny_large.jpg") no-repeat center;
+  }
+  .list:nth-child(3){
+    background: url("../images/H1.jpg") no-repeat center;
+  }
+  .list:nth-child(4){
+    background: url("../images/hero_music_movies_books_large.png") no-repeat center;
+  }
+  .text h1{
+    font-size: 44px;
+  }
+  .text h2{
+    font-size: 32px;
+  }
+  .text span{
+    font-size: 26px;
+  }
+}
+.nav div[class*="col"]{
+  height: 200px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+.nav-row div:nth-child(1){
+  background: url("../images/n1.jpg") no-repeat center;
+}
+.nav-row div:nth-child(2){
+  background: url("../images/n2.jpg") no-repeat center;
+}
+.nav-row div:nth-child(3){
+  background: url("../images/n3.jpg") no-repeat center;
+}
+.nav-row div:nth-child(4){
+  background: url("../images/n4.jpg") no-repeat center;
+}
+.foot{
+  padding-top: 20px;
+  background: rgb(242,242,242);
+}
+.footer:before,.footer:after{
+  content:"";
+  display: block;
+}
+.footer:after{
+  clear: both;
+}
+@media screen and (max-width:766px){
+  .footer{
+    width:90%;
+    margin: 0 auto;
+  }
+  .footer .footer-section{
+    width: 100%;
+    position: relative;
+  }
+  .footer .footer-section h3{
+    color:rgb(105,105,105);
+    font-weight: 600;
+    height: 39px;
+    font-size: 14px;
+    line-height: 39px;
+    background: rgb(242,242,242);
+  }
+  .footer-section h3 span{
+    position:absolute;top:0;right:0;cursor:pointer;
+    display: none;
+  }
+  .footer .footer-section ul{
+    display: none;
+  }
+  .footer .footer-section li{
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 14px;
+    color: rgb(102,102,102);
+    cursor: pointer;
+  }
+}
+@media screen and (min-width:980px){
+  .footer{
+    width:980px;
+    margin: 0 auto;
+    font-family: PingHei, 'PingFang SC', 'Helvetica Neue', Helvetica, STHeitiSC-Light, Arial, sans-serif;
+  }
+  .footer-section{
+    width: 20%;
+    float: left;
+    font-size: 12px;
+  }
+  .footer-section h3,span{
+    color:rgb(51,51,51);
+    font-weight: 600;
+    height: 20px;
+    font-size: 12px;
+  }
+  .footer-section li{
+    color: #888;
+    width: 80%;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width:980px) and (min-width: 766px){
+  .footer{
+    width:90%;
+    margin: 0 auto;
+    font-family: PingHei, 'PingFang SC', 'Helvetica Neue', Helvetica, STHeitiSC-Light, Arial, sans-serif;
+  }
+  .footer-section{
+    width: 20%;
+    float: left;
+    font-size: 12px;
+  }
+  .footer-section h3 span{
+    position:absolute;top:0;right:0;cursor:pointer;
+    display: none;
+  }
+  .footer-section h3,span{
+    color:rgb(51,51,51);
+    font-weight: 600;
+    height: 20px;
+    font-size: 12px;
+  }
+  .footer-section li{
+    color: #888;
+    width: 80%;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}
